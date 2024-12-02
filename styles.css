@@ -1,0 +1,704 @@
+/* ========================== */
+/*   General Reset  */
+/* ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* ========================== */
+/*   Body Section  */
+/* ========================== */
+html, body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #444;
+    background-color: #42628e;
+}
+
+body {
+    flex: 1;
+}
+
+
+
+
+/* ========================== */
+/*   Font Style */
+/* ========================== */
+header h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.section, .section h2, .section p {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar ul li a {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+/* ========================== */
+/*   Header Section  */
+/* ========================== */
+header {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url('images/headerbg.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+
+header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+/* ========================== */
+/*   Navbar + Logo Section  */
+/* ========================== */
+.navbar {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+.logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.3));
+}
+
+.logo-text {
+    margin: 0 30px;
+    font-size: 1.8rem;
+    color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: #42628e;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+/* ========================== */
+/*   Sections Section  */
+/* ========================== */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.section h1, .section h2 {
+    color: #B7D8F1;
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+.section p {
+    color: #4A6FA5;
+    font-size: 1.1rem;
+    z-index: 1;
+}
+
+.section-title {
+    position: relative;
+    margin-top: -250px;
+    z-index: 10;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #B7D8F1;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Ensure it doesn’t overlap with PDF section */
+    
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Gallery & Model Styles */
+.model-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures videos wrap on smaller screens */
+    justify-content: space-evenly; /* Even spacing between videos */
+    align-items: flex-start;
+    gap: 20px; /* Add space between items */
+  }
+  
+
+.model-gallery, .uiux-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.model-item {
+    margin: 15px;
+    position: relative;
+    width: 500px;
+    text-align:center;
+}
+
+.model-image, .uiux-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.model-image:hover, .uiux-image:hover {
+    transform: scale(1.05);
+}
+
+.model-text, .uiux-text {
+    padding: 10px;
+    background-color: #4A6FA5;
+    color: #B7D8F1;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.text-container {
+    margin: 20px 0; /* Add space around the text */
+    text-align: center;
+    color: #B7D8F1; /* Adjust text color */
+    z-index: 1;
+    height:200px;
+    width: 500px;
+
+ 
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.uiux-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows multiple items to stack or align side-by-side */
+    gap: 100px; /* Add space between items */
+    justify-content: center; /* Center all items horizontally */
+  }
+
+  .uiux-item {
+    position: relative; /* Enable positioning for child elements */
+    width: 250px; /* Match the visible scaled width of the iframe */
+    height: 475px; /* Match the scaled height of the iframe + text box */
+  }
+
+  .uiux-item iframe {
+    width: 500px; /* Original width */
+    height: 928px; /* Original height */
+    transform: scale(0.5); /* Scale down */
+    transform-origin: top center; /* Scale relative to top-center */
+    display: block; /* Remove extra space under iframe */
+    position: absolute; /* Allow precise alignment */
+    top: 0; /* Start at the top of the .uiux-item */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%) scale(0.5); /* Center + scale */
+  }
+
+  .uiux-text {
+    position: absolute; /* Manually position below iframe */
+    top: 470px; /* Position below the scaled iframe (half of 928px) */
+    width: 100%; /* Match the container width */
+    text-align: center;
+    background-color: #4A6FA5; /* Slightly transparent */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+  }
+
+.video-container {
+    margin: 40px auto;
+    width: 90%;
+    background-color: var(--light-blue);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.model-item video, .model-item iframe{
+    width:500px;
+    height:300px;
+}
+
+/* PDF Showcase Section */
+.pdf-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Space between links and description */
+    margin-top: 50px;
+  }
+
+  .pdf-links {
+    display: flex;
+    gap: 20px; /* Space between PDF buttons */
+  }
+
+  .pdf-button {
+    background-color: #42628e;
+    color: white;
+    border: 2px solid #354b6a;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .pdf-button:hover {
+    background-color: #354b6a;
+    color: #f0f0f0;
+  }
+
+  .pdf-description {
+  max-width: 300px; /* Limit description width */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pdf-showcase {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.pdf-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 5px; /* Space between buttons */
+    justify-items: center; /* Center buttons within each grid cell */
+    margin: 0 auto;
+    max-width: 600px; /* Optional: Limit max width to control button layout */
+}
+
+.pdf-button {
+    background-color: #42628e;
+    color: white;
+    border: 2px solid #354b6a;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: block; /* Ensure buttons behave like block elements */
+    width: 100%; /* Make buttons span the entire width of their grid cell */
+}
+
+.pdf-button:hover {
+    background-color: #354b6a;
+    color: #f0f0f0;
+}
+
+.pdf-description {
+    max-width: 400px; /* Limit description width */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.pdf-showcase ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pdf-showcase ul li {
+    margin: 10px 0;
+}
+
+.pdf-showcase ul li a {
+    text-decoration: none;
+    color: #274772; /* Make links visible */
+    font-weight: bold;
+    font-size: 1.2rem; /* Slightly larger font */
+}
+
+
+  .about-container {
+    margin-top: 100px; /* Adjust this to match the height of your header */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically below the photo/text */
+    align-items: center;
+    gap: 20px; /* Space between the elements */
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    display: flex; /* Make photo and text side by side */
+    flex-direction: row; /* Ensure they are aligned horizontally */
+    justify-content: center; /* Center photo and text horizontally */
+    gap: 20px; /* Space between photo and text */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.photo img {
+    width: 250px; /* Adjust as needed */
+    height: 250px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+}
+  
+.about-text {
+    font-size: 1.2rem;
+    color: #B7D8F1;
+    max-width: 500px; /* Limit paragraph width */
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px; /* Space below text */
+}
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px; /* Add space below the about text */
+}
+  
+.resume {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between the buttons */
+}
+
+.resume button {
+    background-color: #42628e;
+    color: white;
+    border: 2px solid #354b6a;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+  .resume button:hover {
+    background-color: #354b6a; /* Slightly darker on hover */
+    color: #f0f0f0; /* Light text on hover */
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 15px; /* Space between social buttons */
+}
+
+.social-button {
+    background-color: #42628e;
+    color: white;
+    border: 2px solid #354b6a;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #354b6a;
+    color: #f0f0f0;
+}
+
+.linkedin:before {
+    content: "\f08c"; /* LinkedIn icon code */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+/* General button style */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #42628e; /* Matching navbar button color */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded edges similar to navbar */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Matching navbar transition */
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glow effect */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Styling for the <a> links that wrap the buttons */
+a {
+    text-decoration: none;
+}
+
+ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Ensures buttons inside <a> tags are inline and look like navbar buttons */
+a button {
+    display: inline-block;
+    background-color: #42628e; /* Matching navbar button color */
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glow effect */
+}
+
+
+
+
+
+
+
+  
+/* ========================== */
+/*   Footer Section  */
+/* ========================== */
+footer {
+    text-align: center;
+    background-color: #0b1127;
+    color: #f9f9f9;
+    padding: 20px 0;
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+/* ========================== */
+/*   Scrolling Image Section  */
+/* ========================== */
+.scrolling-images {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.scrolling-images-container {
+    display: flex;
+    width: calc((150px + 20px) * 10);
+    animation: scroll-images 30s linear infinite;
+}
+
+.scrolling-images-container img {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    position: relative;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+/* Keyframes for seamless scroll */
+@keyframes scroll-images {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1 * (150px + 20px) * 5));
+    }
+}
+
+/* Overlay color on grayscale images */
+.scrolling-images-container img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 255, 0.4);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect - Remove grayscale and show full color */
+.scrolling-images-container img:hover {
+    filter: grayscale(0) contrast(100%) brightness(100%);
+}
+
+/* Hover - Change overlay to transparent */
+.scrolling-images-container img:hover::before {
+    background-color: transparent;
+}
+
+
+
+
+/* ========================== */
+/*   Modal Section   */
+/* ========================== */
+.modal {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#modal-image {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 80vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* When modal is visible, change opacity and visibility */
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content.show {
+    opacity: 1;
+}
+
+#modal-description, #modal-title {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Modal and Gallery Flex Styles */
+.model-gallery, .uiux-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
